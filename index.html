@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biodata</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 62.5%;
+            height: 100%;
+            width: 100%;
+            line-height: 30px;
+        }
+
+        .container {
+            width: auto;
+            height: 180rem;
+            position: relative;
+            background-color: #F5F5F5;
+            font-size: 1.6rem;
+            overflow: auto;
+            /* padding-bottom: 2rem; */
+        }
+
+        .latar {
+            width: 114rem;
+            height: 160rem;
+            position: absolute;
+            top: 92rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FFFFFF;
+            /* text-align: center; */
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .row {
+            float: left;
+        }
+
+        .section {
+            height: 100%;
+            width: 50%;
+            /* background-color: red; */
+        }
+
+        .section2 {
+            height: 100%;
+            width: 47rem;
+            background-color: #0078FF;
+            color: #FFFFFF;
+            position: relative;
+            padding: 0 5rem;
+        }
+
+        .foto {
+            float: left;
+        }
+
+        .spesifik {
+            float: left;
+            margin-left: 5rem;
+        }
+
+        .row-spesifik {
+            line-height: 3rem;
+        }
+
+        .bag1 {
+            position: relative;
+
+        }
+
+        .baris {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            left: 5rem;
+            display: inline-block;
+            /* background-color: pink; */
+        }
+
+        .baris-1 {
+            margin-top: 5rem;
+        }
+
+        .baris-2 {
+            width: 80%;
+            /* background-color: red; */
+        }
+
+        .skill {
+            position: relative;
+            float: left;
+            top: 20rem;
+            left: 0;
+            background-color: yellow;
+        }
+
+        .bar {
+            display: inline-block;
+        }
+
+        .progress-bar {
+            height: 2rem;
+            width: 46rem;
+            background-color: #CDE1F8;
+        }
+
+        .bar10 {
+            height: 2rem;
+            width: 4.6rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar20 {
+            height: 2rem;
+            width: 9.2rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar30 {
+            height: 2rem;
+            width: 12.6rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar40 {
+            height: 2rem;
+            width: 18.4rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar50 {
+            height: 2rem;
+            width: 23rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar60 {
+            height: 2rem;
+            width: 27.6rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar70 {
+            height: 2rem;
+            width: 32.2rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar80 {
+            height: 2rem;
+            width: 36.8rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar90 {
+            height: 2rem;
+            width: 41.4rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bar100 {
+            height: 2rem;
+            width: 46rem;
+            background-color: #0078FF;
+            margin-top: -2rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .garis {
+            position: relative;
+            height: .3rem;
+            width: 8rem;
+            top: -1rem;
+            background-color: #FFFFFF;
+        }
+
+        .top380 {
+            position: absolute;
+            left: 5rem;
+            top: 38rem;
+        }
+
+        .top300 {
+            position: absolute;
+            left: 5rem;
+            top: 30rem;
+        }
+
+        .top100 {
+            position: absolute;
+            left: 5rem;
+            top: 10rem;
+        }
+
+        .top30 {
+            position: absolute;
+            top: 3rem;
+        }
+
+        .isi-section2 {
+            width: 47rem;
+        }
+
+        .paragraf {
+            text-align: justify;
+            width: 47rem;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                float: none;
+            }
+
+            .latar {
+                width: 30rem;
+            }
+
+            .foto {
+                margin-left: 6rem;
+                margin-bottom: 2rem;
+            }
+
+            .spesifik {
+                margin-left: -2rem;
+                width: 12rem;
+            }
+
+            .baris-2 {
+                margin-left: -2rem;
+            }
+
+            .progress-bar {
+                height: 2rem;
+                width: 23rem;
+                background-color: #CDE1F8;
+            }
+
+            .bar10 {
+                height: 2rem;
+                width: 2.3rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar20 {
+                height: 2rem;
+                width: 4.6rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar30 {
+                height: 2rem;
+                width: 6.3rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar40 {
+                height: 2rem;
+                width: 9.2rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar50 {
+                height: 2rem;
+                width: 11.5rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar60 {
+                height: 2rem;
+                width: 13.8rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar70 {
+                height: 2rem;
+                width: 16.1rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar80 {
+                height: 2rem;
+                width: 18.4rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar90 {
+                height: 2rem;
+                width: 20.2rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .bar100 {
+                height: 2rem;
+                width: 23rem;
+                background-color: #0078FF;
+                margin-top: -2rem;
+            }
+
+            .baris-3 {
+                margin-left: -2rem;
+            }
+
+            .section2 {
+                width: 20rem;
+                height: 39% !important;
+            }
+
+            .isi-section2 {
+                margin-left: -2rem;
+            }
+
+            .top100 {
+                left: 3rem;
+            }
+
+            .top300 {
+                top: 46rem;
+                margin-left: -2rem;
+            }
+
+            .paragraf {
+                width: 25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="latar">
+            <div class="row section">
+                <div class="bag1">
+                    <div class="baris baris-1">
+                        <div class="foto">
+                            <img src="foto.jpg" alt="foto" width="80rem" height="auto">
+                        </div>
+                        <div class="spesifik">
+                            <div class="row-spesifik"><span style="font-weight: bold">Name:</span> Ubaidillah
+                                Hakim</span></div>
+                            <div class="row-spesifik"><span style="font-weight: bold">Profile:</span> Web
+                                Developer</span></div>
+                            <div class="row-spesifik"><span style="font-weight: bold">Email:</span>
+                                Ubaidillahhf@gmail.com</span></div>
+                            <div class="row-spesifik"><span style="font-weight: bold">Phone:</span> 081231486465</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baris baris-2">
+                        <div class="judul">
+                            <h3>Skill</h3>
+                        </div>
+                        <div>
+                            <div style="margin-top: -1.5rem">
+                                <div>HTML <span style="float: right">80%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar80"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>CSS <span style="float: right">80%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar80"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>Javascript <span style="float: right">70%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar70"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>Jquery <span style="float: right">90%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar90"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>PHP <span style="float: right">90%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar90"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>C# <span style="float: right">50%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar50"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>Java <span style="float: right">70%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar70"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>Vue <span style="float: right">20%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar20"></div>
+                                </div>
+                            </div>
+                            <div style="margin-top: -.5rem">
+                                <div>React <span style="float: right">40%</span></div>
+                                <div class="bar">
+                                    <div class="progress-bar"></div>
+                                    <div class="bar40"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baris baris-3">
+                        <div class="judul">
+                            <h3>Kontak</h3>
+                        </div>
+                        <div>
+                            <div style="margin-top: -1.5rem">
+                                <div><span class="bold">Linkedin:</span> https://linkedin.com/in/ubaidillahhf</div>
+                            </div>
+                            <div style="margin-top: -.1rem">
+                                <div><span class="bold">Facebook:</span> https://facebook.com/ubaidillah.hf</div>
+                            </div>
+                            <div style="margin-top: -.1rem">
+                                <div><span class="bold">Instagram:</span> https://instagram.com/ubaidillahhf</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section2">
+                <div class="isi-section2">
+                    <div class="top30">
+                        <h2>About Me</h2>
+                        <div class="garis"></div>
+                    </div>
+                    <div class="top100 paragraf">
+                        <p>Hi, nama saya Ubaidillah Hakim Fadly dan biasanya saya dipanggil ubed. Saya berasal dari
+                            Universitas Brawijaya, dan saat ini sedang belajar dan mendalami Vue dan React JS. Selain
+                            itu saya juga sedang belajar PWA (Progressive Web Application). Saya sangat tertarik dengan
+                            dunia Front End Development. Terimakasih :)
+                        </p>
+                    </div>
+                    <div class="top300">
+                        <div class="judul">
+                            <h3>Pendidikan</h3>
+                        </div>
+                        <div style="margin-top:-1.5rem">
+                            - Universitas Brawijaya | Teknik Informatika (2015-2019)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
